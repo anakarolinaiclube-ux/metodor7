@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Dia 4: Desintoxicação - Método Respira</title>
+    <title>Dia 7: Nova Identidade - Método Respira</title>
     
     <!-- Fonte Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -224,12 +224,12 @@
     <div class="player-container">
         <div class="app-card">
             <div class="protocol-tag">Jornada Principal</div>
-            <h1>Dia 4: Desintoxicação</h1>
-            <p>Acelerando a eliminação de toxinas emocionais e fortalecendo o seu orgulho pessoal.</p>
+            <h1>Dia 7: Nova Identidade</h1>
+            <p>A consolidação final. Assuma definitivamente a sua nova identidade de Não-Fumante para o resto da vida.</p>
             
             <div class="meta-info">
-                <span><i class="far fa-clock"></i> 20 Minutos</span>
-                <span><i class="fas fa-wave-square"></i> Ondas Theta</span>
+                <span><i class="far fa-clock"></i> 25 Minutos</span>
+                <span><i class="fas fa-wave-square"></i> Fixação</span>
             </div>
 
             <!-- Formulário de Entrada -->
@@ -280,7 +280,7 @@
         // Instanciando os áudios
         const introAudio = new Audio();
         // Áudio fixo do protocolo (URL Placeholder)
-        const mainAudio = new Audio('https://raw.githubusercontent.com/anakarolinaiclube-ux/metodor4/main/audio/respira.mp3'); 
+        const mainAudio = new Audio('https://raw.githubusercontent.com/anakarolinaiclube-ux/metodor7/main/audio/respira.mp3'); 
 
         // 1. Usuário digita o nome e a API é chamada
         startBtn.addEventListener('click', async () => {
@@ -362,7 +362,7 @@
         // Toca o áudio principal da terapia
         function playMainAudio() {
             statusText.innerText = "Sessão em Andamento";
-            subStatus.innerText = "Dia 4: Desintoxicação";
+            subStatus.innerText = "Dia 7: Nova Identidade";
             mainAudio.currentTime = 0; 
             mainAudio.play().catch(e => console.error("Erro ao tocar áudio principal:", e));
         }
